@@ -1,0 +1,69 @@
+<!-- redundant 2 css files once you make this a proper partial-->
+<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+<link href="../../styles/styles.css" rel="stylesheet">
+<!--because I am terrible at this, I am making the JS/CSS files here but they will need to be taken out and added to the index -->
+
+<!--because I am terrible at this, I am making the JS/CSS files here but they will need to be taken out and added to the index -->
+<div class="container">
+    <div class="ReviewStateMain">
+	    <h1>Edit Project Details</h1>
+	  	<hr>
+		<div class="row">      
+	      <div class="col-md-9 personal-info">       
+	        <form class="form-horizontal" role="form">
+	          <div class="form-group">
+	            <label class="col-lg-3 control-label">Name:</label>
+	            <div class="col-lg-8">
+	              <input class="form-control" type="text" value="{{Name}}">
+	            </div>
+	          </div>
+	          <div class="form-group">
+	            <label class="col-lg-3 control-label">Description:</label>
+	            <div class="col-lg-8">
+	              <input class="form-control" type="text" value="{{DESCRIPTION}}">
+	            </div>
+	          </div>
+	          <div class="form-group">
+	            <label class="col-lg-3 control-label">Milestone/s:</label>
+	            <div class="col-lg-8">
+	              <input class="form-control" type="text" value="{{milestone}}">
+	            </div>
+	          </div>
+	          <div class="form-group">
+	            <label class="col-lg-3 control-label">CFI POC:</label>
+	            <div class="col-lg-8">
+	              <input class="form-control" type="text" value="{{CFIPOC}}">
+	            </div>
+	          </div>
+	          <div class="form-group">
+	            <label class="col-md-3 control-label">NGO Partner:</label>
+	            <div class="col-md-8">
+	              <input class="form-control" type="text" value="{{NGOPartner}}">
+	            </div>
+	          </div>
+	          <div class="form-group">
+	            <label class="col-md-3 control-label">NGO POC:</label>
+	            <div class="col-md-8">
+	              <input class="form-control" type="text" value="{{NGOPOC}}">
+	            </div>
+	          </div>
+	          <div class="form-group">
+	            <label class="col-md-3 control-label">Members:</label>
+	            <div class="col-md-8">
+	              <input class="form-control" type="text" value="{{NGOPOC}}">
+	            </div>
+	          </div>
+	          <div class="form-group">
+	            <label class="col-md-3 control-label"></label>
+	            <div class="col-md-8">
+	            	<div class="ApproveHoldButtons">
+	             		<button ng-click="ApproveButton()" class="btn btn-success">Approve</button>
+						<button ng-click="HoldButton()" class="btn btn-primary">Hold</button>
+					</div>
+	            </div>
+	          </div>
+	        </form>
+	      </div>
+	  </div>
+	</div>
+</div>

@@ -1,0 +1,58 @@
+<!-- redundant 2 css files once you make this a proper partial-->
+<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+<link href="../../styles/styles.css" rel="stylesheet">
+<!--because I am terrible at this, I am making the JS/CSS files here but they will need to be taken out and added to the index -->
+
+<div class="container">
+	<!-- leaving for future to have a constant header -->
+  <div ng-include="'views/partials/header.html'"></div>
+	<div class="MainProjectTemplate">
+		<h1>Please fill out the following...</h1>
+		<ul>
+			<li><span class="NameInput"><input type="text" class="form-control form-control-smallest" placeholder="Name"></span></li>
+			<li><span class="DescriptionInput"><input type="text" class="form-control form-control-small" placeholder="Description"></span></li>
+			<li>
+				<div class="input-group" id="form-control-smallest">
+			      <input type="text" class="form-control" placeholder="Milestone/s">
+			      <span class="input-group-btn">
+			        <button class="btn btn-default" type="button">+</button>
+			      </span>
+			    </div>
+			</li>
+			<li>
+				<div class="input-group" id="form-control-smallest">
+			      <input type="text" class="form-control" placeholder="CFI POC">
+			      <span class="input-group-btn">
+			        <button class="btn btn-default" type="button">+</button>
+			      </span>
+			    </div>
+			</li>			
+			<li>
+				<div class="input-group" id="form-control-smallest">
+			      <input type="text" class="form-control" placeholder="NGO Partner">
+			      <span class="input-group-btn">
+			        <button class="btn btn-default" type="button">+</button>
+			      </span>
+			    </div>
+			</li>
+			<li>
+				<div class="input-group" id="form-control-smallest">
+			      <input type="text" class="form-control" placeholder="NGO POC">
+			      <span class="input-group-btn">
+			        <button class="btn btn-default" type="button">+</button>
+			      </span>
+			    </div>
+			</li>
+			<li>
+				<div class="input-group" id="form-control-smallest">
+			      <input type="text" class="form-control" placeholder="Members">
+			      <span class="input-group-btn">
+			        <button class="btn btn-default" type="button">+</button>
+			      </span>
+			    </div>
+			</li>
+		</ul>
+		<button ng-click="SubmitButton()" class="submitButton btn btn-danger">Submit</button>
+	</div>
+
+</div>
